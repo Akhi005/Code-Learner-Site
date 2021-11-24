@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tt1.css">
+</head>
+<body>
+    <div class="home">
+        <h1>Chapter-08: String</h1>
+    </div>
+    <br>
+    <br>
+    <h2>Python Strings</h2>
+    <h2>String Literals</h2>
+    <div class="home1">
+        <h3>String literals in python are surrounded by either single quotation marks, or double quotation marks.</h3>
+         <br>
+         <h3>'hello' is the same as "hello".</h3>
+        <br>
+        <h3>You can display a string literal with the print() function:</h3>
+        <br>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>print("Hello")</h3>
+            <h3>print('Hello')</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Assign String to a Variable</h2>
+        <h3>Assigning a string to a variable is done with the variable name followed by an equal sign and the string:</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>a = "Hello"</h3>
+            <h3>print(a)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Multiline Strings</h2>
+        <h3>You can assign a multiline string to a variable by using three quotes:</h3>
+        <h2>Example</h2>
+        <h3>You can use three double quotes:</h3>
+        <div class="fu">
+            <h3>a = """Lorem ipsum dolor sit amet,</h3>
+            <h3>consectetur adipiscing elit,</h3>
+            <h3>sed do eiusmod tempor incididunt</h3>
+            <h3>ut labore et dolore magna aliqua."""</h3>
+            <h3>print(a)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>Or three single quotes:</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>a =  '''Lorem ipsum dolor sit amet,</h3>
+            <h3>consectetur adipiscing elit,</h3>
+            <h3>sed do eiusmod tempor incididunt</h3>
+            <h3>ut labore et dolore magna aliqua. '''</h3>
+            <h3>print(a)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <br>
+        <div class="ju">
+            <h3>Note: in the result, the line breaks are inserted at the same position as in the code.</h3>
+        </div>
+        <h2>Strings are Arrays</h2>
+        <h3>Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters.</h3>
+        <br>
+        <h3>However, Python does not have a character data type, a single character is simply a string with a length of 1.</h3>
+        <br>
+        <h3>Square brackets can be used to access elements of the string.</h3>
+        <h2>Example</h2>
+        <h3>Get the character at position 1 (remember that the first character has the position 0):</h3>
+        <div class="fu">
+            <h3>a = "Hello, World!"</h3>
+            <h3>print(a[1])</h3>
+        </div> 
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <br>
+        <h2>Slicing</h2>
+        <h3>You can return a range of characters by using the slice syntax.</h3>
+        <br>
+        <h3>Specify the start index and the end index, separated by a colon, to return a part of the string.</h3>
+        <br>
+        <h2>Example</h2>
+        <h3>Get the characters from position 2 to position 5 (not included):</h3>
+        <div class="fu">
+            <h3>b = "Hello, World!"</h3>
+            <h3>print(b[2:5])</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Negative Indexing</h2>
+        <h3>Use negative indexes to start the slice from the end of the string:</h3>
+        <h2>Example</h2>
+        <h3>Get the characters from position 5 to position 1 (not included), starting the count from the end of the string:</h3>
+        <div class="fu">
+            <h3>b = "Hello, World!"</h3>
+            <h3>print(b[-5:-2])</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <br>
+        <h2>String Length</h2>
+        <h3>To get the length of a string, use the len() function.</h3>
+        <br>
+        <h2>Example</h2>
+        <h3>The len() function returns the length of a string:</h3>
+        <div class="fu">
+            <h3>a = "Hello, World!"</h3>
+            <h3>print(len(a))</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>String Methods</h2>
+        <h3>Python has a set of built-in methods that you can use on strings.</h3>
+        <h2>Example</h2>
+        <h3>The strip() method removes any whitespace from the beginning or the end:</h3>
+        <div class="fu">
+            <h3>a = " Hello, World! "</h3>
+            <h3>print(a.strip()) # returns "Hello, World!"</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Example</h2>
+        <h3>The lower() method returns the string in lower case:</h3>
+        <div class="fu">
+            <h3>a = "Hello, World!"</h3>
+            <h3>print(a.lower())</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Example</h2>
+        <h3>The upper() method returns the string in upper case:</h3>
+        <div class="fu">
+            <h3>a = "Hello, World!"</h3>
+            <h3>print(a.upper())</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Example</h2>
+        <h3>The replace() method replaces a string with another string:</h3>
+        <div class="fu">
+            <h3>a = "Hello, World!"</h3>
+            <h3>print(a.replace("H", "J"))</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Example</h2>
+        <h3>The split() method splits the string into substrings if it finds instances of the separator:</h3>
+        <div class="fu">
+            <h3>a = "Hello, World!"</h3>
+            <h3>print(a.split(",")) # returns ['Hello', ' World!']</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Check String</h2>
+        <h3>To check if a certain phrase or character is present in a string, we can use the keywords in or not in.</h3>
+        <h2>Example</h2>
+        <h3>Check if the phrase "ain" is present in the following text:</h3>
+        <div class="fu">
+            <h3>txt = "The rain in Spain stays mainly in the plain"</h3>
+            <h3>x = "ain" in txt</h3>
+            <h3>print(x)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Example</h2>
+        <h3>Check if the phrase "ain" is NOT present in the following text:</h3>
+        <div class="fu">
+            <h3>txt = "The rain in Spain stays mainly in the plain"</h3>
+            <h3>x = "ain" not in txt</h3>
+            <h3>print(x) </h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>String Concatenation</h2>
+        <h3>To concatenate, or combine, two strings you can use the + operator.</h3>
+        <h2>Example</h2>
+        <h3>Merge variable a with variable b into variable c:</h3>
+        <div class="fu">
+            <h3>a = "Hello"</h3>
+            <h3>b = "World"</h3>
+            <h3>c = a + b</h3>
+            <h3>print(c)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Example</h2>
+        <h3>To add a space between them, add a " ":</h3>
+        <div class="fu">
+            <h3>a = "Hello"</h3>
+            <h3>b = "World"</h3>
+            <h3>c = a +" "+ b</h3>
+            <h3>print(c)</h3> 
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>String Format</h2>
+        <h3>As we learned in the Python Variables chapter, we cannot combine strings and numbers like this:</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>age = 36</h3>
+            <h3>txt = "My name is John, I am " + age</h3>
+            <h3>print(txt)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <br>
+        <h3>But we can combine strings and numbers by using the format() method!</h3>
+        <h3>The format() method takes the passed arguments, formats them, and places them in the string where the placeholders {} are:</h3>
+        <h2>Example</h2> 
+        <h3>Use the format() method to insert numbers into strings:</h3>
+        <div class="fu">
+            <h3>age = 36</h3>
+            <h3>txt = "My name is John, and I am {}"</h3>
+            <h3>print(txt.format(age))</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>The format() method takes unlimited number of arguments, and are placed into the respective placeholders:</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>quantity = 3</h3>
+            <h3>itemno = 567</h3>
+            <h3>price = 49.95</h3>
+            <h3>myorder = "I want {} pieces of item {} for {} dollars."</h3>
+            <h3>print(myorder.format(quantity, itemno, price))</h3>
+        </div> 
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>You can use index numbers {0} to be sure the arguments are placed in the correct placeholders:</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>quantity = 3</h3>
+            <h3>itemno = 567</h3>
+            <h3>price = 49.95</h3>
+            <h3>myorder = "I want {2} pieces of item {0} for {1} dollars."</h3>
+            <h3>print(myorder.format(quantity, itemno, price))</h3>
+        </div> 
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Escape Character</h2>
+        <h3>To insert characters that are illegal in a string, use an escape character.</h3>
+        <br>
+        <h3>An escape character is a backslash \ followed by the character you want to insert.</h3>
+        <br>
+        <h3>An example of an illegal character is a double quote inside a string that is surrounded by double quotes:</h3>
+        <br>
+        <h2>Example</h2>
+        <h3>You will get an error if you use double quotes inside a string that is surrounded by double quotes:</h3>
+        <div class="fu">
+            <h3>txt = "We are the so-called "Vikings" from the north."</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>To fix this problem, use the escape character \":</h3>
+        <br>
+        <h2>Example</h2>
+        <h3>The escape character allows you to use double quotes when you normally would not be allowed:</h3>
+        <div class="fu">
+            <h3>txt = "We are the so-called \"Vikings\" from the north."</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>Other escape characters used in Python:</h3>
+        <div class="fu">
+            <h3>Code=>	Result=>	Try it</h3>
+            <h3>\'  =>	Single Quote</h3>
+            <h3>\\  =>	Backslash</h3>
+            <h3>\n  =>	New Line</h3>
+            <h3>\r  =>	Carriage Return</h3>
+            <h3>\t  =>	Tab</h3>
+            <h3>\b  =>	Backspace</h3>
+            <h3>\f  =>	Form Feed</h3>
+            <h3>\ooo  =>	Octal value</h3>
+            <h3>\xhh  =>	Hex value</h3>
+        </div>
+        <br>
+        <h2>String Methods</h2>
+        <h3>Python has a set of built-in methods that you can use on strings.</h3>
+        <div class="ju">
+            <h3>Note: All string methods returns new values. They do not change the original string.</h3>
+        </div>
+        <h3>Method =>	Description</h3>
+        <h3>capitalize()	Converts the first character to upper case</h3>
+        <h3>casefold()	Converts string into lower case</h3>
+        <h3>center()	Returns a centered string</h3>
+        <h3>count()	Returns the number of times a specified value occurs in a string</h3>
+        <h3>encode()	Returns an encoded version of the string</h3>
+        <h3>endswith()	Returns true if the string ends with the specified value</h3>
+        <h3>expandtabs()	Sets the tab size of the string</h3>
+        <h3>find()	Searches the string for a specified value and returns the position of where it was found</h3>
+        <h3>format()	Formats specified values in a string</h3>
+        <h3>format_map()	Formats specified values in a string</h3>
+        <h3>index()	Searches the string for a specified value and returns the position of where it was found</h3>
+        <h3>isalnum()	Returns True if all characters in the string are alphanumeric</h3>
+        <h3>isalpha()	Returns True if all characters in the string are in the alphabet</h3>
+        <h3>isdecimal()	Returns True if all characters in the string are decimals</h3>
+        <h3>isdigit()	Returns True if all characters in the string are digits</h3>
+        <h3>isidentifier()	Returns True if the string is an identifier</h3>
+        <h3>islower()	Returns True if all characters in the string are lower case</h3>
+        <h3>isnumeric()	Returns True if all characters in the string are numeric</h3>
+        <h3>isprintable()	Returns True if all characters in the string are printable</h3>
+        <h3>isspace()	Returns True if all characters in the string are whitespaces</h3>
+        <h3>istitle()	Returns True if the string follows the rules of a title</h3>
+        <h3>isupper()	Returns True if all characters in the string are upper case</h3>
+        <h3>join()	Joins the elements of an iterable to the end of the string</h3>
+        <h3>ljust()	Returns a left justified version of the string</h3>
+        <h3>lower()	Converts a string into lower case</h3>
+        <h3>lstrip()	Returns a left trim version of the string</h3>
+        <h3>maketrans()	Returns a translation table to be used in translations</h3>
+        <h3>partition()	Returns a tuple where the string is parted into three parts</h3>
+        <h3>replace()	Returns a string where a specified value is replaced with a specified value</h3>
+        <h3>rfind()	Searches the string for a specified value and returns the last position of where it was found</h3>
+        <h3>rindex()	Searches the string for a specified value and returns the last position of where it was found</h3>
+        <h3>rjust()	Returns a right justified version of the string</h3>
+        <h3>rpartition()	Returns a tuple where the string is parted into three parts</h3>
+        <h3>rsplit()	Splits the string at the specified separator, and returns a list</h3>
+        <h3>rstrip()	Returns a right trim version of the string</h3>
+        <h3>split()	Splits the string at the specified separator, and returns a list</h3>
+        <h3>splitlines()	Splits the string at line breaks and returns a list</h3>
+        <h3>startswith()	Returns true if the string starts with the specified value</h3>
+        <h3>strip()	Returns a trimmed version of the string</h3>
+        <h3>swapcase()	Swaps cases, lower case becomes upper case and vice versa</h3>
+        <h3>title()	Converts the first character of each word to upper case</h3>
+        <h3>translate()	Returns a translated string</h3>
+        <h3>upper()	Converts a string into upper case</h3>
+        <h3>zfill()	Fills the string with a specified number of 0 values at the beginning</h3>
+    </div>
+</body>
+</html>

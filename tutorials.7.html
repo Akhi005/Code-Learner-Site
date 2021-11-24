@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tt1.css">
+</head>
+<body>
+    <div class="home">
+        <h1>Chapter-07: Numbers</h1>
+    </div>
+    <br>
+    <br>
+    <h2>Python Numbers</h2>
+    <div class="home1">
+         <h3>There are three numeric types in Python:</h3>
+         <h3>=>int</h3>
+         <h3>=>float</h3>
+         <h3>=>complex</h3>
+         <br>
+         <h3>Variables of numeric types are created when you assign a value to them:</h3>
+         <h2>Example</h2>
+         <div class="fu">
+             <h3>x = 1    # int</h3>
+             <h3>y = 2.8  # float</h3>
+             <h3>z = 1j   # complex</h3>
+         </div>
+         <h3>To verify the type of any object in Python, use the type() function:</h3>
+         <br>
+         <h2>Example</h2>
+         <div class="fu">
+            <h3>print(type(x))</h3>
+            <h3>print(type(y))</h3>
+            <h3>print(type(z))</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <br>
+        <h2>Int</h2>
+        <h3>Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.</h3>
+        <h2>Example</h2>
+        <h3>Integers:</h3>
+        <div class="fu">
+            <h3>x = 1</h3>
+            <h3>y = 35656222554887711</h3>
+            <h3>z = -3255522</h3>
+            <br>
+            <br>
+            <h3>print(type(x))</h3>
+            <h3>print(type(y))</h3>
+            <h3>print(type(z))</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <br>
+        <h2>Float</h2>
+        <h3>Float, or "floating point number" is a number, positive or negative, containing one or more decimals.</h3>
+        <h2>Example</h2>
+        <h3>Float</h3>
+        <h3></h3> 
+        <div class="fu">
+            <h3>x = 1.10</h3>
+            <h3>y = 1.0</h3>
+            <h3>z = -35.59</h3>
+            <br>
+            <br>
+            <h3>print(type(x))</h3>
+            <h3>print(type(y))</h3>
+            <h3>print(type(z))</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>Float can also be scientific numbers with an "e" to indicate the power of 10.</h3>
+        <h2>Example</h2>
+        <h3>Float</h3>
+        <div class="fu">
+            <h3>x = 35e3</h3>
+            <h3>y = 12E4</h3>
+            <h3>z = -87.7e100</h3>
+            <br>
+            <br>
+            <h3>print(type(x))</h3>
+            <h3>print(type(y))</h3>
+            <h3>print(type(z))</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Complex</h2>
+        <h3>Complex numbers are written with a "j" as the imaginary part:</h3>
+        <h2>Example</h2>
+        <h3>Complex</h3>
+        <div class="fu">
+            <h3>x = 3+5j</h3>
+            <h3>y = 5j</h3>
+            <h3>z = -5j </h3>
+            <br>
+            <br>
+            <h3>print(type(x))</h3>
+            <h3>print(type(y))</h3>
+            <h3>print(type(z))</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Type Conversion</h2>
+        <h3>You can convert from one type to another with the int(), float(), and complex() methods:</h3>
+        <h2>Example</h2>
+        <h3>Convert from one type to another:</h3>
+        <div class="fu">
+            <h3>x = 1    # int</h3>
+            <h3>y = 2.8  # float</h3>
+            <h3>z = 1j   # complex </h3>
+            <br>
+            <br>
+            <h3>#convert from int to float:</h3>
+            <h3>a = float(x)</h3>
+            <br>
+            <br>
+            <h3>#convert from float to int:</h3>
+            <h3>b = int(y)</h3>
+            <br>
+            <br>
+            <h3>#convert from int to complex:</h3>
+            <h3>c = complex(x)</h3>
+            <br>
+            <br>
+            <h3>print(a)</h3>
+            <h3>print(b)</h3>
+            <h3>print(c)</h3>
+            <br>
+            <br>
+            <h3>print(type(a))</h3>
+            <h3>print(type(b))</h3>
+            <h3>print(type(c))</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <br>
+        <h2>Random Number</h2>
+        <h3>Python does not have a random() function to make a random number, but Python has a built-in module called random that can be used to make random numbers:</h3>
+        <h2>Example</h2>
+        <h3>Import the random module, and display a random number between 1 and 9:</h3>
+        <div class="fu">
+            <h3>import random</h3>
+            <h3>print(random.randrange(1, 10))</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>In our Random Module Reference you will learn more about the Random module.</h3>
+    </div>
+</body>
+</html>

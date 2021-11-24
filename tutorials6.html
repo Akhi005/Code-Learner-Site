@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tt1.css">
+</head>
+<body>
+    <div class="home">
+        <h1>Chapter-06: If Else and Loops</h1>
+    </div>
+    <br>
+    <br>
+    <h2>Python If ... Else</h2>
+    <h2>Python Conditions and If statements</h2>
+    <div class="home1">
+        <h3>Python supports the usual logical conditions from mathematics:</h3>
+        <h3>Equals: a == b</h3>
+        <h3>Not Equals: a != b</h3>
+        <h3>Less than: a < b</h3>
+        <h3>Less than: a < b</h3>
+        <h3>Greater than: a > b</h3>
+        <h3>Greater than or equal to: a >= b</h3>
+        <br>
+        <br>
+        <h3>These conditions can be used in several ways, most commonly in "if statements" and loops.</h3>
+        <br>
+        <h3>An "if statement" is written by using the if keyword.</h3>
+        <h2>Example</h2>
+        <h3>If statement:</h3>
+        <div class="fu">
+            <h3>a = 33</h3>
+            <h3>b = 200</h3>
+            <h3>if b > a:</h3>
+               <div class="mu">
+                 <h3>print("b is greater than a")</h3>
+               </div>
+          </div>
+          <h3>In this example we use two variables, a and b, which are used as part of the if statement to test whether b is greater than a. As a is 33, and b is 200, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".</h3>
+          <h2>Indentation</h2>
+          <br>
+          <h3>Python relies on indentation (whitespace at the beginning of a line) to define scope in the code. Other programming languages often use curly-brackets for this purpose.</h3>
+          <h2>Example</h2>
+          <h3>If statement, without indentation (will raise an error):</h3>
+          <div class="fu">
+            <h3>a = 33</h3>
+            <h3>b = 200</h3>
+            <h3>if b > a:</h3>
+               <div class="mu">
+                 <h3>print("b is greater than a") # you will get an error</h3>
+               </div>
+          </div>
+          <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Elif</h2>
+        <h3>The elif keyword is pythons way of saying "if the previous conditions were not true, then try this condition".</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>a = 33</h3>
+            <h3>b = 200</h3>
+            <h3>if b > a:</h3>
+               <div class="mu">
+                 <h3>print("b is greater than a")</h3>
+               </div>
+            <h3>elif a == b:</h3>
+            <div class="mu">
+                <h3>print("a and b are equal")</h3>
+            </div>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>In this example a is equal to b, so the first condition is not true, but the elif condition is true, so we print to screen that "a and b are equal".</h3>
+        <br>
+        <h2>Else</h2>
+        <h3>The else keyword catches anything which isn't caught by the preceding conditions.</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>a = 33</h3>
+            <h3>b = 200</h3>
+            <h3>if b > a:</h3>
+               <div class="mu">
+                 <h3>print("b is greater than a")</h3>
+               </div>
+            <h3>elif a == b:</h3>
+            <div class="mu">
+                <h3>print("a and b are equal")</h3>
+            </div>
+            <h3>else:</h3>
+            <div class="mu">
+                <h3>print("a is greater than b")</h3>
+            </div>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <br>
+        <h3>In this example a is greater than b, so the first condition is not true, also the elif condition is not true, so we go to the else condition and print to screen that "a is greater than b".</h3>
+        <br>
+        <h3>You can also have an else without the elif:</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>a = 33</h3>
+            <h3>b = 200</h3>
+            <h3>if b > a:</h3>
+               <div class="mu">
+                 <h3>print("b is greater than a") # you will get an error</h3>
+               </div>
+               <h3>else:</h3>
+               <div class="mu">
+                <h3>print("b is not greater than a")</h3>
+              </div>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Short Hand If</h2>
+        <h3>If you have only one statement to execute, you can put it on the same line as the if statement.</h3>
+        <h2>Example</h2>
+        <h3>One line if statement:</h3>
+        <div class="fu">
+            <h3>if a > b: print("a is greater than b")</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Short Hand If ... Else</h2>
+        <h3>If you have only one statement to execute, one for if, and one for else, you can put it all on the same line:</h3>
+        <h2>Example</h2>
+        <h3>One line if else statement:</h3>
+        <div class="fu">
+            <h3>a = 2</h3>
+            <h3>b = 330</h3>
+            <h3>print("A") if a > b else print("B")</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <br>
+        <div class="ju">
+            <h3>This technique is known as Ternary Operators, or Conditional Expressions.</h3>
+            <h3>You can also have multiple else statements on the same line:</h3>
+        </div>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>a = 330 </h3>
+            <h3>b = 330</h3>
+            <h3>print("A") if a > b else print("=") if a == b else print("B")</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>And</h2>
+        <h3>The and keyword is a logical operator, and is used to combine conditional statements:</h3>
+        <h2>Example</h2>
+        <h3>Test if a is greater than b, AND if c is greater than a:</h3>
+        <div class="fu">
+            <h3>a = 200</h3>
+            <h3>b = 33</h3>
+            <h3>c = 500</h3>
+            <h3>if a > b and c > a:</h3>
+            <div class="mu">
+                <h3>print("b is greater than a") # you will get an error</h3>
+            </div>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Or</h2>
+        <h3>The or keyword is a logical operator, and is used to combine conditional statements:</h3>
+        <h2>Example</h2>
+        <h3>Test if a is greater than b, OR if a is greater than c:</h3>
+        <div class="fu">
+            <h3>a = 200</h3>
+            <h3>b = 33</h3>
+            <h3>c = 500</h3>
+            <h3>if a > b or a > c:</h3>
+            <div class="mu">
+                <h3> print("At least one of the conditions is True")</h3>
+            </div>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Nested If</h2>
+        <h3>You can have if statements inside if statements, this is called nested if statements.</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>x = 41</h3>
+            <br>
+            <br>
+            <h3>if x > 10:</h3>
+            <div class="mu">
+                <h3>print("Above ten,") </h3>
+                <h3>if x > 20: </h3>
+            </div>
+            <div class="pu">
+                <h3>print("and also above 20!")</h3>
+            </div>
+            <h3>else:</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>The pass Statement</h2>
+        <h3>if statements cannot be empty, but if you for some reason have an if statement with no content, put in the pass statement to avoid getting an error.</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>a = 33</h3>
+            <h3>b = 200</h3>
+            <br>
+            <h3>if b > a:</h3>
+            <div class="mu">
+                <h3>pass </h3>
+            </div>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2>Python For Loops</h2>
+        <h3>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</h3>
+        <br>
+        <h3>This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</h3>
+        <br>
+        <h3>With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</h3>
+        <h2>Example</h2>
+        <h3>Print each fruit in a fruit list:</h3>
+        <div class="fu">
+            <h3>fruits = ["apple", "banana", "cherry"]</h3>
+            <h3>for x in fruits:</h3>
+            <div class="mu">
+                <h3> print(x) </h3>
+            </div>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>The for loop does not require an indexing variable to set beforehand.</h3>
+        <br>
+        <br>
+        <h2>Looping Through a String</h2>
+        <h3>Even strings are iterable objects, they contain a sequence of characters:</h3>
+        <h3>Example</h3>
+        <h3>Loop through the letters in the word "banana":</h3>
+        <div class="fu">
+            <h3>for x in "banana":</h3>
+            <div class="mu">
+                <h3>print(x) </h3>
+            </div>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <br>
+        <h2>The break Statement</h2>
+        <h3>With the break statement we can stop the loop before it has looped through all the items:</h3>
+        <h2>Example</h2>
+        <h3>Exit the loop when x is "banana":</h3>
+        <div class="fu">
+            <h3>fruits = ["apple", "banana", "cherry"]</h3>
+            <h3>for x in fruits:</h3>
+            <div class="mu">
+                <h3>print(x) </h3>
+                <h3>if x == "banana":</h3>
+                <div class="pu">
+                    <h3>print("and also above 20!")</h3>
+                </div>
+            </div>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Example</h2>
+        <h3>Exit the loop when x is "banana", but this time the break comes before the print:</h3>
+        <div class="fu">
+            <h3>fruits = ["apple", "banana", "cherry"]</h3>
+            <h3>for x in fruits:</h3>
+            <div class="mu">
+                <h3>if x == "banana":</h3>
+                <div class="pu">
+                    <h3>break</h3>
+                </div>
+                <h3>print(x) </h3>
+            </div>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <br>
+        <h2>The continue Statement</h2>
+        <h3>With the continue statement we can stop the current iteration of the loop, and continue with the next:</h3>
+        <h2>Example</h2>
+        <h3>Do not print banana:</h3>
+        <div class="fu">
+            <h3>fruits = ["apple", "banana", "cherry"]</h3>
+            <h3>for x in fruits:</h3>
+            <div class="mu">
+                <h3>if x == "banana":</h3>
+                <div class="pu">
+                    <h3>continue</h3>
+                </div>
+                <h3>print(x) </h3>
+            </div>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+       <br>
+       <h2>The range() Function</h2>
+       <h3>To loop through a set of code a specified number of times, we can use the range() function,</h3>
+       <h3>The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.</h3>
+       <h2>Example</h2>
+       <h3>Using the range() function:</h3>
+       <div class="fu">
+         <h3>for x in range(6):</h3>
+          <div class="mu">
+             <h3>print(x) </h3>
+          </div>
+       </div>
+        <div class="ju">
+          <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+       <br>
+      <h3>Note that range(6) is not the values of 0 to 6, but the values 0 to 5.</h3>
+      <h3>The range() function defaults to 0 as a starting value, however it is possible to specify the starting value by adding a parameter: range(2, 6), which means values from 2 to 6 (but not including 6):</h3>
+      <h2>Example</h2>
+      <h3>Using the start parameter:</h3>
+      <div class="fu">
+        <h3>for x in range(2, 6):</h3>
+         <div class="mu">
+            <h3>print(x) </h3>
+         </div>
+      </div>
+       <div class="ju">
+         <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+       </div>
+       <h3>The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3):</h3>
+       <h2>Example</h2>
+       <h3>Increment the sequence with 3 (default is 1):</h3>
+       <div class="fu">
+        <h3>for x in range(2, 30, 3):</h3>
+         <div class="mu">
+            <h3>print(x) </h3>
+         </div>
+      </div>
+       <div class="ju">
+         <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+       </div>
+       <h2>Else in For Loop</h2>
+       <h3>The else keyword in a for loop specifies a block of code to be executed when the loop is finished:</h3>
+       <h2>Example</h2>
+       <h3>Print all numbers from 0 to 5, and print a message when the loop has ended:</h3>
+       <div class="fu">
+        <h3>for x in range(6):</h3>
+         <div class="mu">
+            <h3>print(x) </h3>
+         </div>
+         <h3>else:</h3>
+         <div class="mu">
+            <h3>print("Finally finished!") </h3>
+         </div>
+      </div>
+       <div class="ju">
+         <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+       </div>
+       <h2>Nested Loops</h2>
+       <h3>A nested loop is a loop inside a loop.</h3>
+       <h3>The "inner loop" will be executed one time for each iteration of the "outer loop":</h3>
+       <br>
+       <h2>Example</h2>
+       <h3>Print each adjective for every fruit:</h3>
+       <div class="fu">
+        <h3>adj = ["red", "big", "tasty"]</h3>
+        <h3>fruits = ["apple", "banana", "cherry"]</h3>
+        <br>
+        <h3>for x in adj:</h3>
+        <div class="mu">
+            <h3>for y in fruits:</h3>
+            <div class="pu">
+                <h3>print(x, y)</h3>
+            </div>
+            <h3> </h3>
+        </div>
+       </div>
+       <div class="ju">
+        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+       </div>
+       <br>
+       <h2>The pass Statement</h2>
+        <h3>for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>for x in [0, 1, 2]:</h3>
+             <div class="mu">
+                <h3> pass </h3>
+             </div>
+          </div>
+           <div class="ju">
+             <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+           </div>
+    </div>
+</body>
+</html>

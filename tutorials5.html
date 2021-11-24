@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tt1.css">
+</head>
+<body>
+    <div class="home">
+        <h1>Chapter-05:  Functions</h1>
+    </div>
+    <br>
+    <br>
+    <h2>Python Functions</h2>
+    <div class="home1">
+       <h3>A function is a block of code which only runs when it is called.</h3>
+       <h3>You can pass data, known as parameters, into a function.</h3>
+       <h3>A function can return data as a result.</h3>
+       <h2>Creating a Function</h2>
+       <h3>In Python a function is defined using the def keyword:</h3>
+       <h2>Example</h2>
+           <div class="fu">
+             <h3>def my_function():</h3>
+                <div class="mu">
+                  <h3>print("Hello from a function")</h3>
+                </div>
+           </div>
+        <h2>Calling a Function</h2>
+        <h3>To call a function, use the function name followed by parenthesis:</h3>  
+        <h2>Example</h2> 
+        <div class="fu">
+            <h3>def my_function():</h3>
+               <div class="mu">
+                 <h3>print("Hello from a function")</h3>
+               </div>
+               <h3>my_function()</h3>
+          </div>
+          <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Arguments</h2>
+        <br>
+        <h3>Information can be passed into functions as arguments.</h3>
+        <br>
+        <h3>Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.</h3>
+        <br>
+        <h3>The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:</h3>
+        <br>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>def my_function(fname):</h3>
+               <div class="mu">
+                 <h3>print(fname + " Refsnes")</h3>
+               </div>
+               <h3>my_function("Emil")</h3>
+               <br>
+               <br>
+               <h3>my_function("Emil")</h3>
+               <h3>my_function("Tobias")</h3>
+               <h3>my_function("Linus")</h3>
+          </div>
+          <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <br>
+        <div class="ju">
+            <h3>Arguments are often shortened to args in Python documentations.</h3>
+        </div>
+        <h2>Parameters or Arguments?</h2>
+        <h3>The terms parameter and argument can be used for the same thing: information that are passed into a function.</h3>
+        <h3>From a function's perspective:</h3>
+        <h3>A parameter is the variable listed inside the parentheses in the function definition.</h3>
+        <h3>An argument is the value that is sent to the function when it is called.</h3>
+        <h2>Number of Arguments</h2>
+        <h3>By default, a function must be called with the correct number of arguments. Meaning that if your function expects 2 arguments, you have to call the function with 2 arguments, not more, and not less.</h3>
+        <h2>Example</h2>
+        <h3>This function expects 2 arguments, and gets 2 arguments:</h3>
+        <div class="fu">
+            <h3>def my_function(fname, lname):</h3>
+               <div class="mu">
+                 <h3>print(fname + " " + lname)</h3>
+               </div>
+               <br>
+               <h3>my_function("Emil", "Refsnes")</h3>
+          </div>
+          <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>If you try to call the function with 1 or 3 arguments, you will get an error:</h3>
+        <h2>Example</h2>
+        <h3>This function expects 2 arguments, but gets only 1:</h3>
+        <div class="fu">
+            <h3>def my_function(fname, lname):</h3>
+               <div class="mu">
+                 <h3>print(fname + " " + lname)</h3>
+               </div>
+               <br>
+               <h3>my_function("Emil")</h3>
+          </div>
+          <h2>Arbitrary Arguments, *args</h2>
+          <h3>If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition.</h3>
+          <br>
+          <h3>This way the function will receive a tuple of arguments, and can access the items accordingly:</h3>
+          <h2>Example</h2>
+          <h3>If the number of arguments is unknown, add a * before the parameter name:</h3>
+          <div class="fu">
+            <h3>def my_function(*kids):</h3>
+               <div class="mu">
+                 <h3>print("The youngest child is " + kids[2])</h3>
+               </div>
+               <br>
+               <h3>my_function("Emil", "Tobias", "Linus")</h3>
+          </div>
+          <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <br>
+        <div class="ju">
+            <h3>Arbitrary Arguments are often shortened to *args in Python documentations.</h3>
+        </div>
+        <h2>Keyword Arguments</h2>
+        <h3>You can also send arguments with the key = value syntax.</h3>
+        <h3>This way the order of the arguments does not matter.</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>def my_function(child3, child2, child1):</h3>
+               <div class="mu">
+                 <h3>print("The youngest child is " + child3)</h3>
+               </div>
+               <br>
+               <h3>my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")</h3>
+          </div>
+          <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <br>
+        <div class="ju">
+            <h3>The phrase Keyword Arguments are often shortened to kwargs in Python documentations.</h3>
+        </div>
+        <h2>Arbitrary Keyword Arguments, **kwargs</h2>
+        <h3>If you do not know how many keyword arguments that will be passed into your function, add two asterisk: ** before the parameter name in the function definition.</h3>
+        <br>
+        <h3>This way the function will receive a dictionary of arguments, and can access the items accordingly:</h3>
+        <h2>Example</h2>
+        <h3>If the number of keyword arguments is unknown, add a double ** before the parameter name:</h3>
+        <div class="fu">
+            <h3>def my_function(**kid):</h3>
+               <div class="mu">
+                 <h3>print("His last name is " + kid["lname"])</h3>
+               </div>
+               <br>
+               <h3>my_function(fname = "Tobias", lname = "Refsnes")</h3>
+          </div>
+          <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <br>
+        <div class="ju">
+            <h3>Arbitrary Kword Arguments are often shortened to **kwargs in Python documentations.</h3>
+        </div>
+        <h2>Default Parameter Value</h2>
+        <h3>The following example shows how to use a default parameter value.</h3>
+        <br>
+        <h3>If we call the function without argument, it uses the default value:</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>def my_function(country = "Norway"):</h3>
+               <div class="mu">
+                 <h3>print("I am from " + country)</h3>
+               </div>
+               <br>
+               <h3>my_function("Sweden")</h3>
+               <h3>my_function("India")</h3>
+               <h3>my_function()</h3>
+               <h3>my_function("Brazil")</h3>
+          </div>
+          <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Passing a List as an Argument</h2>
+        <h3>You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.</h3>
+        <br>
+        <h3>E.g. if you send a List as an argument, it will still be a List when it reaches the function:</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>def my_function(food):</h3>
+               <div class="mu">
+                 <h3>for x in food:</h3>
+                 <div class="pu">
+                    <h3>print(x)</h3>
+                </div>
+               </div>
+               <br>
+               <h3>fruits = ["apple", "banana", "cherry"]</h3>
+               <br>
+               <h3>my_function(fruits)</h3>
+          </div>
+          <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Return Values</h2>
+        <h3>To let a function return a value, use the return statement:</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>def my_function(x):</h3>
+               <div class="mu">
+                 <h3>return 5 * x</h3>
+               </div>
+               <br>
+               <h3>print(my_function(3))</h3>
+               <h3>print(my_function(5))</h3>
+               <h3>print(my_function(9))</h3>
+          </div>
+          <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>The pass Statement</h2>
+        <h3>function definitions cannot be empty, but if you for some reason have a function definition with no content, put in the pass statement to avoid getting an error.</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>def myfunction():
+            </h3>
+               <div class="mu">
+                 <h3>pass</h3>
+               </div>
+          </div>
+          <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Recursion</h2>
+        <h3>Python also accepts function recursion, which means a defined function can call itself.</h3>
+        <br>
+        <h3>Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result.</h3>
+        <br>
+        <h3>The developer should be very careful with recursion as it can be quite easy to slip into writing a function which never terminates, or one that uses excess amounts of memory or processor power. However, when written correctly recursion can be a very efficient and mathematically-elegant approach to programming.</h3>
+        <br>
+        <h3>In this example, tri_recursion() is a function that we have defined to call itself ("recurse"). We use the k variable as the data, which decrements (-1) every time we recurse. The recursion ends when the condition is not greater than 0 (i.e. when it is 0).</h3>
+        <br>
+        <h3>To a new developer it can take some time to work out how exactly this works, best way to find out is by testing and modifying it.</h3>
+        <h2>Example</h2>
+        <h3>Recursion Example</h3>
+        <div class="fu">
+            <h3>def tri_recursion(k):</h3>
+               <div class="mu">
+                 <h3>if(k > 0):</h3>
+                 <div class="pu">
+                    <h3>result = k + tri_recursion(k - 1)</h3>
+                    <h3>print(result)</h3>
+                </div>
+               </div>
+               <div class="mu">
+                   <h3>else:</h3>
+               </div>
+               <div class="pu">
+                <h3>result = 0</h3>
+            </div>
+            <div class="mu">
+                <h3>return result</h3>
+            </div>
+            <br>
+            <br>
+            <h3>print("\n\nRecursion Example Results")</h3>
+            <h3>tri_recursion(6)</h3>
+          </div>
+          <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body{
+    margin: 0px;
+    font-size:16px;
+    background-color:rgb(245, 248, 224);
+    font-weight: 400;
+}
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0;
+    outline : none;
+}
+.home h1{
+    font-size : 30px;
+    color:green;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 25px;
+    padding-left: 500px;
+}
+.home1 h3{
+    font-size : 23px;
+    color:brown;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 25px;
+    padding-left: 15px;
+}
+.home-box h3{
+    font-size : 23px;
+    color:brown;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 25px;
+    padding-left: 15px;
+}
+.ju h3{
+    font-size : 23px;
+    color:blue;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 25px;
+    padding-left: 15px;
+}
+.fu h3{
+        font-size : 23px;
+        color:green;
+        font-weight: 500;
+        margin-bottom: 15px;
+        line-height: 25px;
+        padding-left: 15px;
+    }
+.mu h3{
+    font-size : 23px;
+    color:green;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 25px;
+    padding-left: 50px;
+}
+.pu h3{
+    font-size : 23px;
+    color:green;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 25px;
+    padding-left: 70px;
+}
+.custom-box {
+    max-width:700px;
+    background-color:brown;
+    margin:40px auto;
+    padding:30px;
+    border-radius: 10px;
+    animation: fadeInRight 1s ease;
+}
+@keyframes fadeInRight{
+    0%{
+        transform: translatex(40px);
+        opacity:0;
+    }
+    100%{
+        transform: translatex(0px);
+        opacity:1;
+    }
+}

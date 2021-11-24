@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tt1.css">
+</head>
+<body>
+    <div class="home">
+        <h1>Chapter-12: Tuple</h1>
+    </div>
+    <br>
+    <br>
+    <h2>Python Tuples</h2>
+    <div class="home1">
+        <h3>Tuples are used to store multiple items in a single variable.</h3>
+        <br>
+        <h3>Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.</h3>
+        <br>
+        <h3>A tuple is a collection which is ordered and unchangeable.</h3>
+        <br>
+        <h3>Tuples are written with round brackets.</h3>
+        <h2>Example</h2>
+        <h3>Create a Tuple:</h3>
+        <div class="fu">
+            <h3>thistuple = ("apple", "banana", "cherry")</h3>
+            <h3>print(thistuple)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Tuple Items</h2>
+        <h3>Tuple items are ordered, changeable, and allow duplicate values.</h3>
+        <br>
+        <h3>Tuple items are indexed, the first item has index [0], the second item has index [1] etc.</h3>
+        <br>
+        <h2>Ordered</h2>
+        <h3>When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.</h3>
+        <h2>Unchangeable</h2>
+        <h3>Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created. </h3>
+        <br>
+        <h2>Allow Duplicates</h2>
+        <h3>Since tuple are indexed, tuples can have items with the same value:</h3>
+        <h2>Example</h2>
+        <h3>Tuples allow duplicate values:</h3>
+        <div class="fu">
+            <h3>thistuple = ("apple", "banana", "cherry", "apple", "cherry")</h3>
+            <h3>print(thistuple)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Tuple Length</h2>
+        <h3>To determine how many items a tuple has, use the len() function:</h3>
+        <h2>Example</h2>
+        <h3>Print the number of items in the tuple:</h3>
+        <div class="fu">
+            <h3>thistuple = ("apple", "banana", "cherry")</h3>
+            <h3>print(len(thistuple))</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Create Tuple With One Item</h2>
+        <h3>To create a tuple with only one item, you have to add a comma after the item, otherwise Python will not recognize it as a tuple.</h3>
+        <h2>Example</h2>
+        <h3>One item tuple, remember the commma:</h3>
+        <div class="fu">
+            <h3>thistuple = ("apple",)</h3>
+            <h3>print(type(thistuple))</h3>
+            <br>
+            <h3>#NOT a tuple</h3>
+            <h3>thistuple = ("apple")</h3>
+            <h3>print(type(thistuple))</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Tuple Items - Data Types</h2>
+        <h3>Tuple items can be of any data type:</h3>
+        <h2>Example</h2>
+        <h3>String, int and boolean data types:</h3>
+        <div class="fu">
+            <h3>tuple1 = ("apple", "banana", "cherry")</h3>
+            <h3>tuple2 = (1, 5, 7, 9, 3)</h3>
+            <h3>tuple3 = (True, False, False)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>A tuple can contain different data types:</h3>
+        <h2>Example</h2>
+        <h3>A tuple with strings, integers and boolean values:</h3>
+        <div class="fu">
+            <h3>tuple1 = ("abc", 34, True, 40, "male")</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>type()</h2>
+        <h3>From Python's perspective, tuples are defined as objects with the data type 'tuple':</h3>
+        <div class="ju">
+            <h3><class 'tuple'></h3>
+        </div>
+        <h2>Example</h2>
+        <h3>What is the data type of a tuple?</h3>
+        <div class="fu">
+            <h3>mytuple = ("apple", "banana", "cherry")</h3>
+            <h3>print(type(mytuple))</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>The tuple() Constructor</h2>
+        <h3>It is also possible to use the tuple() constructor to make a tuple.</h3>
+        <h2>Example</h2>
+        <h3>Using the tuple() method to make a tuple:</h3>
+        <div class="fu">
+            <h3>thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets</h3>
+            <h3>print(thistuple)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Python Collections (Arrays)</h2>
+        <h3>There are four collection data types in the Python programming language:</h3>
+        <br>
+        <br>
+        <h3>*List is a collection which is ordered and changeable. Allows duplicate members.</h3>
+        <h3>*Tuple is a collection which is ordered and unchangeable. Allows duplicate members.</h3>
+        <h3>*Set is a collection which is unordered and unindexed. No duplicate members.</h3>
+        <h3>*Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.</h3>
+        <br>
+        <h3>When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.</h3>
+        <h2>Python - Access Tuple Items</h2>
+        <h3>You can access tuple items by referring to the index number, inside square brackets:</h3>
+        <h2>Example</h2>
+        <h3>Print the second item in the tuple:</h3>
+        <div class="fu">
+            <h3>thistuple = ("apple", "banana", "cherry")</h3>
+            <h3>print(thistuple[1])</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+            <br>
+            <h3>Note: The first item has index 0.</h3>
+        </div>
+        <h2>Negative Indexing</h2>
+        <h3>Negative indexing means start from the end.</h3>
+        <h3>-1 refers to the last item, -2 refers to the second last item etc.</h3>
+        <h2>Example</h2>
+        <h3>Print the last item of the tuple:</h3>
+        <div class="fu">
+            <h3>thistuple = ("apple", "banana", "cherry")</h3>
+            <h3>print(thistuple[-1])</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Range of Indexes</h2>
+        <h3>You can specify a range of indexes by specifying where to start and where to end the range.</h3>
+        <br>
+        <h3>When specifying a range, the return value will be a new tuple with the specified items.</h3>
+        <h2>Example</h2>
+        <h3>Return the third, fourth, and fifth item:</h3>
+        <div class="fu">
+            <h3>thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")</h3>
+            <h3>print(thistuple[2:5])</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+            <br>
+            <h3>Note: The search will start at index 2 (included) and end at index 5 (not included).</h3>
+            <h3>Remember that the first item has index 0.</h3>
+        </div>
+        <h3>By leaving out the start value, the range will start at the first item:</h3>
+        <h2>Example</h2>
+        <h3>This example returns the items from the beginning to, but NOT included, "kiwi":</h3>
+        <div class="fu">
+            <h3>thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")</h3>
+            <h3>print(thistuple[:4])</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>By leaving out the end value, the range will go on to the end of the list:</h3>
+        <h2>Example</h2>
+        <h3>This example returns the items from "cherry" and to the end:</h3>
+        <div class="fu">
+            <h3>thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")</h3>
+            <h3>print(thistuple[2:])</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Range of Negative Indexes</h2>
+        <h3>Specify negative indexes if you want to start the search from the end of the tuple:</h3>
+        <h2>Example</h2>
+        <h3>This example returns the items from index -4 (included) to index -1 (excluded)</h3>
+        <div class="fu">
+            <h3>thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")</h3>
+            <h3>print(thistuple[-4:-1])</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Check if Item Exists</h2>
+        <h3>To determine if a specified item is present in a tuple use the in keyword:</h3>
+        <h2>Example</h2>
+        <h3>Check if "apple" is present in the tuple:</h3>
+        <div class="fu">
+            <h3>thistuple = ("apple", "banana", "cherry")</h3>
+            <h3>if "apple" in thistuple:</h3>
+            <div class="pu">
+                <h3>print("Yes, 'apple' is in the fruits tuple")</h3>
+            </div>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Python - Update Tuples</h2>
+        <h3>Tuples are unchangeable, meaing that you cannot change, add, or remove items once the tuple is created.</h3>
+        <br>
+        <h3>But there are some workarounds.</h3>
+        <h2>Change Tuple Values</h2>
+        <h3>Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.</h3>
+       <br>
+       <h3>But there is a workaround. You can convert the tuple into a list, change the list, and convert the list back into a tuple.</h3>
+       <h2>Example</h2>
+       <h3>Convert the tuple into a list to be able to change it:</h3>
+       <div class="fu">
+           <h3>x = ("apple", "banana", "cherry")</h3>
+           <h3>y = list(x)</h3>
+           <h3>y[1] = "kiwi"</h3>
+           <h3>x = tuple(y)</h3>
+           <br>
+           <br>
+           <h3>print(x)</h3>
+       </div>
+         <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+         </div>
+         <h2>Add Items</h2>
+         <h3>Once a tuple is created, you cannot add items to it.</h3>
+         <h2>Example</h2>
+         <h3>You cannot add items to a tuple:</h3>
+         <div class="fu">
+             <h3>thistuple = ("apple", "banana", "cherry")</h3>
+             <h3>thistuple.append("orange") # This will raise an error</h3>
+             <h3>print(thistuple)</h3>
+         </div>
+         <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+         </div>
+         <h3>Just like the workaround for changing a tuple, you can convert it into a list, add your item(s), and convert it back into a tuple.</h3>
+         <h2>Example</h2>
+         <h3>Convert the tuple into a list, add "orange", and convert it back into a tuple:</h3>
+         <div class="fu">
+             <h3>thistuple = ("apple", "banana", "cherry")</h3>
+             <h3>y = list(thistuple)</h3>
+             <h3>y.append("orange")</h3>
+             <h3>thistuple = tuple(y)</h3>
+         </div>
+         <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+         </div>
+         <h2>Remove Items</h2>
+         <h3>Note: You cannot remove items in a tuple.</h3>
+         <h3>Tuples are unchangeable, so you cannot remove items from it, but you can use the same workaround as we used for changing and adding tuple items:</h3>
+        <h2>Example</h2>
+        <h3>Convert the tuple into a list, remove "apple", and convert it back into a tuple:</h3>
+        <div class="fu">
+            <h3>thistuple = ("apple", "banana", "cherry")</h3>
+            <h3>y = list(thistuple)</h3>
+            <h3>y.remove("apple")</h3>
+            <h3>thistuple = tuple(y)</h3>
+        </div>
+     <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+     </div>
+
+         <h3>Or you can delete the tuple completely:</h3>
+         <h2>Example</h2>
+         <h3>The del keyword can delete the tuple completely:</h3>
+         <div class="fu">
+             <h3>thistuple = ("apple", "banana", "cherry")</h3>
+             <h3>del thistuple</h3>
+             <h3>print(thistuple) #this will raise an error because the tuple no longer exists
+            </h3>
+         </div>
+         <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+         </div>
+         <br>
+         <br>
+         <h2>Python - Unpack Tuples</h2>
+         <h3>When we create a tuple, we normally assign values to it. This is called "packing" a tuple:</h3>
+         <h2>Example</h2>
+         <h3>Packing a tuple:</h3>
+         <div class="fu">
+             <h3>fruits = ("apple", "banana", "cherry")</h3>
+         </div>
+         <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+         </div>
+         <h3>But, in Python, we are also allowed to extract the values back into variables. This is called "unpacking":</h3>
+         <h2>Example</h2>
+         <h3>Unpacking a tuple:</h3>
+         <div class="fu">
+             <h3>fruits = ("apple", "banana", "cherry")</h3>
+             <br>
+             <h3>(green, yellow, red) = fruits</h3>
+             <br>
+             <h3>print(green)</h3>
+             <h3>print(yellow)</h3>
+             <h3>print(red)</h3>
+         </div>
+         <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+            <br>
+            <h3>Note: The number of variables must match the number of values in the tuple, if not, you must use an asterix to collect the remaining values as a list.</h3>
+         </div>
+        <h2>Using Asterix*</h2>
+        <h3>If the number of variables is less than the number of values, you can add an * to the variable name and the values will be assigned to the variable as a list:</h3>
+        <h2>Example</h2>
+        <h3>Assign the rest of the values as a list called "red":</h3>
+        <div class="fu">
+            <h3>fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")</h3>
+            <br>
+            <h3>(green, yellow, *red) = fruits</h3>
+            <br>
+            <h3>print(green)</h3>
+            <h3>print(yellow)</h3>
+            <h3>print(red)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>If the asterix is added to another variable name than the last, Python will assign values to the variable until the number of values left matches the number of variables left.</h3>
+        <h2>Example</h2>
+        <h3>Add a list of values the "tropic" variable:</h3>
+        <div class="fu">
+            <h3>fruits = ("apple", "mango", "papaya", "pineapple", "cherry")</h3>
+            <br>
+            <h3>(green, *tropic, red) = fruits</h3>
+            <br>
+            <h3>print(green)</h3>
+            <h3>print(tropic)</h3>
+            <h3>print(red)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Python - Loop Tuples</h2>
+        <h2>Loop Through a Tuple</h2>
+        <h3>You can loop through the tuple items by using a for loop.</h3>
+        <h2>Example</h2>
+        <h3>Iterate through the items and print the values:</h3>
+        <div class="fu">
+            <h3>thistuple = ("apple", "banana", "cherry")</h3>
+            <h3>for x in thistuple:</h3>
+            <div class="pu">
+                <h3>print(x)</h3>
+            </div>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Loop Through the Index Numbers</h2>
+        <h3>You can also loop through the tuple items by referring to their index number.</h3>
+        <br>
+        <h3>Use the range() and len() functions to create a suitable iterable.</h3>
+        <h2>Example</h2>
+        <h3>Print all items by referring to their index number:</h3>
+        <div class="fu">
+            <h3>thistuple = ("apple", "banana", "cherry")</h3>
+            <h3>for i in range(len(thistuple)):</h3>
+            <div class="pu">
+                <h3>print(thistuple[i])</h3>
+            </div>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Using a While Loop</h2>
+        <h3>You can loop through the list items by using a while loop.</h3>
+        <br>
+        <h3>Use the len() function to determine the length of the tuple, then start at 0 and loop your way through the tuple items by refering to their indexes.</h3>
+        <br>
+        <h3>Remember to increase the index by 1 after each iteration.</h3>
+        <h2>Example</h2>
+        <h3>Print all items, using a while loop to go through all the index numbers:</h3>
+        <div class="fu">
+            <h3>thistuple = ("apple", "banana", "cherry")</h3>
+            <h3>i = 0</h3>
+            <h3>while i < len(thistuple):</h3>
+            <br>
+            <div class="pu">
+                <h3>print(thistuple[i])</h3>
+                <h3>i = i + 1</h3>
+            </div>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Join Two Tuples</h2>
+        <h3>To join two or more tuples you can use the + operator:</h3>
+        <h2>Example</h2>
+        <h3>Join two tuples:</h3>
+        <div class="fu">
+            <h3>tuple1 = ("a", "b" , "c")</h3>
+            <h3>tuple2 = (1, 2, 3)</h3>
+            <br>
+            <h3>tuple3 = tuple1 + tuple2</h3>
+            <h3>print(tuple3)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Multiply Tuples</h2>
+        <h3>If you want to multiply the content of a tuple a given number of times, you can use the * operator:</h3>
+        <h2>Example</h2>
+        <h3>Multiply the fruits tuple by 2:</h3>
+        <div class="fu">
+            <h3>fruits = ("apple", "banana", "cherry")</h3>
+            <h3>mytuple = fruits * 2</h3>
+            <br>
+            <h3>print(mytuple)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Tuple Methods</h2>
+        <h3>Python has two built-in methods that you can use on tuples.</h3>
+        <h3>Method =>	Description</h3>
+        <h3>count()	=> Returns the number of times a specified value occurs in a tuple</h3>
+        <h3>index()	=> Searches the tuple for a specified value and returns the position of where it was found</h3>
+    </div>
+</body>
+</html>

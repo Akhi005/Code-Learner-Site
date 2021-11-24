@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tt1.css">
+</head>
+<body>
+    <div class="home">
+        <h1>Chapter-11: Dictionary</h1>
+    </div>
+    <br>
+    <br>
+    <h2>Python Dictionaries</h2>
+    <div class="home1">
+         <h3>Dictionaries are used to store data values in key:value pairs.</h3>
+         <br>
+         <h3>A dictionary is a collection which is unordered, changeable and does not allow duplicates.</h3>
+         <br>
+         <h3>Dictionaries are written with curly brackets, and have keys and values:</h3>
+         <h2>Example</h2>
+         <h3>Create and print a dictionary:</h3>
+         <div class="fu">
+             <h3>thisdict = {</h3>
+                <div class="pu">
+                    <h3>"brand": "Ford",</h3>
+                    <h3>"model": "Mustang",</h3>
+                    <h3>"year": 1964</h3>
+                </div>
+                <h3>}</h3>
+                <h3>print(thisdict)</h3>
+         </div>
+         <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Dictionary Items</h2>
+        <h3>Dictionary items are unordered, changeable, and does not allow duplicates.</h3>
+        <h3>Dictionary items are presented in key:value pairs, and can be referred to by using the key name.</h3>
+        <h2>Example</h2>
+        <h3>Print the "brand" value of the dictionary:</h3>
+        <div class="fu">
+            <h3>thisdict = {</h3>
+               <div class="pu">
+                   <h3>"brand": "Ford",</h3>
+                   <h3>"model": "Mustang",</h3>
+                   <h3>"year": 1964</h3>
+               </div>
+               <h3>}</h3>
+               <h3>print(thisdict["brand"])</h3>
+        </div>
+        <div class="ju">
+           <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+       </div>
+       <h2>Unordered</h2>
+       <h3>When we say that dictionaries are ordered, it means that the items does not have a defined order, you cannot refer to an item by using an index.</h3>
+       <h2>Changeable</h2>
+       <h3>Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.</h3>
+       <h2>Duplicates Not Allowed</h2>
+       <h3>Dictionaries cannot have two items with the same key:</h3>
+       <h2>Example</h2>
+       <h3>Duplicate values will overwrite existing values:</h3>
+       <div class="fu">
+        <h3>thisdict = {</h3>
+           <div class="pu">
+               <h3>"brand": "Ford",</h3>
+               <h3>"model": "Mustang",</h3>
+               <h3>"year": 1964</h3>
+               <h3>"year": 2020</h3>
+           </div>
+           <h3>}</h3>
+           <h3>print(thisdict)</h3>
+    </div>
+    <div class="ju">
+       <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+   </div>
+    <h2>Python - Access Dictionary Items</h2>
+    <h3>You can access the items of a dictionary by referring to its key name, inside square brackets:</h3>
+    <h2>Example</h2>
+    <h3>Get the value of the "model" key:</h3>
+    <div class="fu">
+        <h3>thisdict = {</h3>
+            <div class="pu">
+                <h3>"brand": "Ford",</h3>
+                <h3>"model": "Mustang",</h3>
+                <h3>"year": 1964</h3>
+                <h3>"year": 2020</h3>
+            </div>
+            <h3>}</h3>
+            <h3>x = thisdict["model"]</h3>
+        </div>
+           <div class="ju">
+               <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+           </div>
+         <h3>There is also a method called get() that will give you the same result:</h3>
+        <h2>Example</h2>
+        <h3>Get the value of the "model" key:</h3>
+         <div class="fu">
+             <h3>x = thisdict.get("model")</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+       </div>
+         <h2>Get Keys</h2>
+        <h3>The keys() method will return a list of all the keys in the dictionary.</h3>
+        <h2>Example</h2>
+        <h3>Get a list of the keys:</h3>
+       <div class="fu">
+                 <h3>x = thisdict.keys()</h3>
+        </div>
+         <div class="ju">
+             <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+          </div>
+       <h3>The list of the keys is a view of the dictionary, meaning that any changes done to the dictionary will be reflected in the keys list.</h3>
+       <h2>Example</h2>
+        <h3>Add a new item to the original dictionary, and see that the keys list gets updated as well:</h3>
+       <div class="fu">
+           <h3>car = {</h3>
+           <h3>"brand": "Ford",</h3>
+           <h3>"model": "Mustang",</h3>
+           <h3>"year": 1964</h3>
+           <h3>}</h3>
+           <br>
+           <h3>x = car.keys()</h3>
+           <br>
+           <h3>print(x) #before the change</h3>
+           <br>
+           <h3>car["color"] = "white"</h3>
+           <br>
+           <h3>print(x) #after the change</h3>
+           <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+         </div>
+       </div>
+       <h2>Get Values</h2>
+       <h3>The values() method will return a list of all the values in the dictionary.</h3>
+       <h2>Example</h2>
+       <h3>Get a list of the values:</h3>
+       <div class="fu">
+           <h3>x = thisdict.values()</h3>
+       </div>
+       <div class="ju">
+              <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>The list of the values is a view of the dictionary, meaning that any changes done to the dictionary will be reflected in the values list.</h3>
+        <h2>Example</h2>
+        <h3>Add a new item to the original dictionary, and see that the keys list gets updated as well:</h3>
+        <div class="fu">
+            <h3>car = {</h3>
+                <h3>"brand": "Ford",</h3>
+                <h3>"model": "Mustang",</h3>
+                <h3>"year": 1964</h3>
+                <h3>}</h3>
+                <br>
+                <h3>x = car.values()</h3>
+                <br>
+                <h3>print(x) #before the change</h3>
+                <br>
+                <h3>car["year"] = 2020</h3>
+                <br>
+                <h3>print(x) #after the change</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+      </div>
+      <h2>Get Items</h2>
+      <h3>The items() method will return each item in a dictionary, as tuples in a list.</h3>
+      <h2>Example</h2>
+      <h3>Get a list of the key:value pairs</h3>
+      <div class="fu">
+          <h3>x = thisdict.items()</h3>
+      </div>
+        <div class="ju">
+           <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>The returned list is a view of the items of the dictionary, meaning that any changes done to the dictionary will be reflected in the items list.</h3>
+        <h2>Example</h2>
+        <h3>Add a new item to the original dictionary, and see that the items list gets updated as well:</h3>
+        <div class="fu">
+            <h3>car = {</h3>
+                <h3>"brand": "Ford",</h3>
+                <h3>"model": "Mustang",</h3>
+                <h3>"year": 1964</h3>
+                <h3>}</h3>
+                <br>
+                <h3>x = car.items()</h3>
+                <br>
+                <h3>print(x) #before the change</h3>
+                <br>
+                <h3>car["year"] = 2020</h3>
+                <br>
+                <h3>print(x) #after the change</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+       <h2>Check if Key Exists</h2>
+       <h3>To determine if a specified key is present in a dictionary use the in keyword:</h3>
+       <h2>Example</h2>
+       <h3>Check if "model" is present in the dictionary:</h3>
+       <div class="fu">
+        <h3>thisdict = {</h3>
+            <div class="pu">
+                <h3>"brand": "Ford",</h3>
+                <h3>"model": "Mustang",</h3>
+                <h3>"year": 1964</h3>
+                <h3>"year": 2020</h3>
+            </div>
+            <h3>}</h3>
+            <br>
+            <h3>if "model" in thisdict:</h3>
+            <div class="pu">
+                <h3>print("Yes, 'model' is one of the keys in the thisdict dictionary")</h3>
+            </div>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+    </div>
+</body>
+</html>

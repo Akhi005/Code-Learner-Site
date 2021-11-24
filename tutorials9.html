@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tt1.css">
+</head>
+<body>
+    <div class="home">
+        <h1>Chapter-09: List</h1>
+    </div>
+    <br>
+    <br>
+    <h2>Python Lists</h2>
+    <div class="home1">
+      <br>
+      <h3>Lists are used to store multiple items in a single variable.</h3>
+      <br>
+      <h3>Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.</h3>
+      <br>
+      <h3>Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.</h3>
+      <h3>Lists are created using square brackets:</h3>
+      <h2>Example</h2>
+      <h3>Create a List:</h3>
+      <div class="fu">
+        <h3>thislist = ["apple", "banana", "cherry"]</h3>
+        <h3>print(thislist)</h3>
+      </div>
+      <div class="ju">
+        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+    </div>
+    <h2>List Items</h2>
+    <h3>List items are ordered, changeable, and allow duplicate values.</h3>
+    <h3>List items are indexed, the first item has index [0], the second item has index [1] etc.</h3>
+    <br>
+    <br>
+    <h2>Ordered</h2>
+    <br>
+    <h3>When we say that lists are ordered, it means that the items have a defined order, and that order will not change.</h3>
+    <h3>If you add new items to a list, the new items will be placed at the end of the list.</h3>
+     <br>
+     <div class="ju">
+        <h3>Note: There are some list methods that will change the order, but in general: the order of the items will not change.</h3>
+     </div>
+        <br>
+     <h2>Changeable</h2>
+     <br>
+     <h3>The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.</h3>
+     <br>
+     <h2>Allow Duplicates</h2>
+     <br>
+     <h3>Since lists are indexed, lists can have items with the same value:</h3>
+     <br>
+     <h2>Example</h2>
+     <h3>Lists allow duplicate values:</h3>
+     <div class="fu">
+     <h3>thislist = ["apple", "banana", "cherry", "apple", "cherry"]</h3>
+     <h3>print(thislist)</h3>
+    </div>
+    <div class="ju">
+        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+    </div>
+    <h2>List Length</h2>
+    <br>
+    <h3>To determine how many items a list has, use the len() function:</h3>
+    <h2>Example</h2>
+    <h3>Print the number of items in the list:</h3>
+    <div class="fu">
+        <h3>thislist = ["apple", "banana", "cherry"]</h3>
+        <h3>print(len(thislist))</h3>
+    </div>
+    <div class="ju">
+        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+    </div>
+    <h2>List Items - Data Types</h2>
+    <br>
+    <h3>List Items can be of any data type:</h3>
+    <h2>Example</h2>
+    <h3>String, int and boolean data types:</h3>
+    <div class="fu">
+        <h3>list1 = ["apple", "banana", "cherry"]</h3>
+        <h3>list2 = [1, 5, 7, 9, 3]</h3>
+        <h3>list3 = [True, False, False]</h3>
+    </div>
+    <div class="ju">
+        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        <br>
+        <h3>A list can contain different data types:</h3>
+    </div>
+    <h2>Example</h2>
+    <h3>A list with strings, integers and boolean values:</h3>
+    <div class="fu">
+        <h3>list1 = ["abc", 34, True, 40, "male"]</h3>
+    </div>
+    <div class="ju">
+        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+    </div>
+    <br>
+    <h2>type()</h2>
+    <br>
+    <h3>From Python's perspective, lists are defined as objects with the data type 'list':</h3>
+    <div class="ju">
+        <h3><class 'list'></class></h3>
+    </div>
+    <h2>Example</h2>
+    <h3>What is the data type of a list?</h3>
+    <div class="fu">
+        <h3>mylist = ["apple", "banana", "cherry"]</h3>
+        <h3>print(type(mylist))</h3>
+    </div>
+    <div class="ju">
+        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+    </div>
+    <br>
+    <h2>The list() Constructor</h2>
+    <h3>It is also possible to use the list() constructor when creating a new list.</h3>
+    <br>
+    <h2>Example</h2>
+    <h3>Using the list() constructor to make a List:</h3>
+    <div class="fu">
+        <h3>thislist = list(("apple", "banana", "cherry")) # note the double round-brackets</h3>
+        <h3>print(thislist)</h3>
+    </div>
+    <div class="ju">
+        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+    </div>
+    <h2>Python Collections (Arrays)</h2>
+    <h3>There are four collection data types in the Python programming language:</h3>
+    <br>
+    <h3>List is a collection which is ordered and changeable. Allows duplicate members.</h3>
+    <h3>Tuple is a collection which is ordered and unchangeable. Allows duplicate members.</h3>
+    <h3>Set is a collection which is unordered and unindexed. No duplicate members.</h3>
+    <h3>Dictionary is a collection which is unordered, changeable and indexed. No duplicate members.</h3>
+    <br>
+    <h3>When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.</h3>
+    <br>
+    <h2>Python - Access List Items</h2>
+    <h3>List items are indexed and you can access them by referring to the index number:</h3>
+    <h2>Example</h2>
+    <h3>Print the second item of the list:</h3>
+    <div class="fu">
+        <h3>thislist = ["apple", "banana", "cherry"]</h3>
+        <h3>print(thislist[1])</h3>
+    </div>
+    <div class="ju">
+        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        <br>
+        <h3>Note: The first item has index 0.</h3>
+    </div>
+    <h2>Negative Indexing</h2>
+        <h3>Negative indexing means start from the end</h3>
+        <h3>-1 refers to the last item, -2 refers to the second last item etc.</h3>
+        <h2>Example</h2>
+        <h3>Print the last item of the list:</h3>    
+        <div class="fu">
+            <h3>thislist = ["apple", "banana", "cherry"]</h3>
+            <h3>print(thislist[-1])</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Range of Indexes</h2>
+        <br>
+        <h3>You can specify a range of indexes by specifying where to start and where to end the range.</h3>
+        <h3>When specifying a range, the return value will be a new list with the specified items.</h3>
+        <h2>Example</h2>
+        <h3>Return the third, fourth, and fifth item:</h3>
+        <div class="fu">
+               <h3>thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]</h3>
+                <h3>print(thislist[2:5])</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+            <br>
+            <h3>Note: The search will start at index 2 (included) and end at index 5 (not included).</h3>
+            <br>
+            <h3>Remember that the first item has index 0.</h3>
+        </div>
+        <h3>By leaving out the start value, the range will start at the first item:</h3>
+        <h2>Example</h2>
+        <h3>This example returns the items from the beginning to, but NOT included, "kiwi":</h3>
+        <div class="fu">
+            <h3>thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]</h3>
+            <h3>print(thislist[:4])</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+       <h3>By leaving out the end value, the range will go on to the end of the list:</h3>
+       <h2>Example</h2>
+        <h3>This example returns the items from "cherry" and to the end:</h3>
+        <div class="fu">
+            <h3>thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]</h3>
+            <h3>print(thislist[2:])</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+       <h2>Range of Negative Indexes</h2>
+       <h3>Specify negative indexes if you want to start the search from the end of the list:</h3>
+       <h2>Example</h2>
+       <div class="fu">
+           <h3>thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]</h3>
+           <h3>print(thislist[-4:-1])</h3>
+       </div>
+       <div class="ju">
+        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+       <h2>Check if Item Exists</h2>
+       <h3>To determine if a specified item is present in a list use the in keyword:</h3>
+       <h2>Example</h2>
+      <h3>Check if "apple" is present in the list:</h3>
+       <div class="fu">
+        <h3>thislist = ["apple", "banana", "cherry"]</h3>
+        <h3>if "apple" in thislist:</h3>
+       </div>
+        <div class="pu">
+            <h3>print("Yes, 'apple' is in the fruits list")</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Python - Cange List Items</h2>
+        <h2>Change Item Value</h2>
+        <h3>To change the value of a specific item, refer to the index number:</h3>
+        <h2>Example</h2>
+        <h3>Change the second item:</h3>
+        <div class="fu">
+            <h3>thislist = ["apple", "banana", "cherry"]</h3>
+            <h3>thislist[1] = "blackcurrant"</h3>
+            <h3>print(thislist)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>To insert more than one item, create a list with the new values, and specify the index number where you want the new values to be inserted:</h3>
+        <br>
+        <h2>Example</h2>
+        <h3>Change the second value by replacing it with two new values:</h3>
+        <div class="fu">
+            <h3>thislist = ["apple", "banana", "cherry"]</h3>
+            <h3>thislist[1] = ["blackcurrant", "watermelon"]</h3>
+            <h3>print(thislist)</h3>
+         </div>
+         <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+            <br>
+            <h3>Note: The length of the list will change when the number of items inserted does not match the number of items replaced.</h3>
+        </div>
+        <h2>Change a Range of Item Values</h2>
+        <h3>To change the value of items within a specific range, define a list with the new values, and refer to the range of index numbers where you want to insert the new values:</h3>
+        <h2>Example</h2>
+        <h3>Change the values "banana" and "cherry" with the values "blackcurrant" and "watermelon":</h3>
+        <div class="fu">
+            <h3>thislist = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]</h3>
+            <h3>thislist[1:3] = ["blackcurrant", "watermelon"]</h3>
+            <h3>print(thislist)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Insert Items</h2>
+        <h3>To insert a new list item, without replacing any of the existing values, we can use the insert() method.</h3>
+        <br>
+        <h3>The insert() method inserts an item at the specified index:</h3>
+        <br>
+        <h2>Example</h2>
+        <h3>Insert "watermelon" as the third item:</h3>
+        <div class="fu">
+            <h3>thislist = ["apple", "banana", "cherry"]</h3>
+            <h3>thislist.insert(2, "watermelon")</h3>
+            <h3>print(thislist)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+            <br>
+            <h3>Note: As a result of the example above, the list will now contain 4 items.</h3>
+        </div>
+        <br>
+        <h2>Python - Add List Items</h2>
+        <h2>Append Items</h2>
+        <h3>To add an item to the end of the list, use the append() method:</h3>
+        <h2>Example</h2>
+        <h3>Using the append() method to append an item:</h3>
+        <div class="fu">
+            <h3>thislist = ["apple", "banana", "cherry"]</h3>
+            <h3>thislist.append("orange")</h3>
+            <h3>print(thislist)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Insert Items</h2>
+        <h3>To insert a list item at a specified index, use the insert() method.</h3>
+        <h3>The insert() method inserts an item at the specified index:</h3>
+        <h2>Example</h2>
+        <h3>Insert an item as the second position:</h3>
+        <div class="fu">
+            <h3>thislist = ["apple", "banana", "cherry"]</h3>
+            <h3>thislist.insert(1, "orange")</h3>
+            <h3>print(thislist)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+            <br>
+            <h3>Note: As a result of the examples above, the lists will now contain 4 items.</h3>
+        </div>
+        <h2>Extend List</h2>
+        <h3>To append elements from another list to the current list, use the extend() method.</h3>
+        <br>
+        <h2>Example</h2>
+        <h3>Add the elements of tropical to thislist:</h3>
+        <div class="fu">
+            <h3>thislist = ["apple", "banana", "cherry"]</h3>
+            <h3>tropical = ["mango", "pineapple", "papaya"]</h3>
+            <h3>thislist.extend(tropical)</h3>
+            <h3>print(thislist)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>The elements will be added to the end of the list.</h3>
+        <h2>Add Any Iterable</h2>
+        <h3>The extend() method does not have to append lists, you can add any iterable object (tuples, sets, dictionaries etc.).</h3>
+        <br>
+        <h2>Example</h2>
+        <h3>Add elements of a tuple to a list:</h3>
+        <div class="fu">
+            <h3>thislist = ["apple", "banana", "cherry"]</h3>
+            <h3>thistuple = ("kiwi", "orange")</h3>
+            <h3>thislist.extend(thistuple)</h3>
+            <h3>print(thislist)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Python - Remove List Items</h2>
+        <h2>Remove Specified Item</h2>
+        <h3>The remove() method removes the specified item.</h3>
+        <h2>Example</h2>
+        <h3>Remove "banana":</h3>
+        <div class="fu">
+            <h3>thislist = ["apple", "banana", "cherry"]</h3>
+            <h3>thislist.remove("banana")</h3>
+            <h3>print(thislist)</h3>
+         </div>
+         <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Remove Specified Index</h2>
+        <h3>The pop() method removes the specified index.</h3>
+        <h2>Example</h2>
+        <h3>Remove the second item:</h3>
+        <div class="fu">
+           <h3>thislist = ["apple", "banana", "cherry"]</h3>
+           <h3>thislist.pop(1)</h3>
+           <h3>print(thislist)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>If you do not specify the index, the pop() method removes the last item.</h3>
+        <h2>Example</h2>
+        <h3>Remove the last item:</h3>
+        <div class="fu">
+            <h3>thislist = ["apple", "banana", "cherry"]</h3>
+            <h3>thislist.pop()</h3>
+            <h3>print(thislist)</h3>
+         </div>
+         <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>The del keyword also removes the specified index:</h3>
+        <h2>Example</h2>
+        <h3>Remove the first item:</h3>
+        <div class="fu">
+            <h3>thislist = ["apple", "banana", "cherry"]</h3>
+            <h3>del thislist[0]</h3>
+            <h3>print(thislist)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>The del keyword can also delete the list completely.</h3>
+        <h2>Example</h2>
+        <h3>Delete the entire list:</h3>
+        <div class="fu">
+            <h3>thislist = ["apple", "banana", "cherry"]</h3>
+            <h3>del thislist</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Clear the List</h2>
+        <h3>The clear() method empties the list.</h3>
+        <br>
+        <h3>The list still remains, but it has no content.</h3>
+        <h2>Example</h2>
+        <h3>Clear the list content:</h3>
+        <div class="fu">
+            <h3>thislist = ["apple", "banana", "cherry"]</h3>
+            <h3>thislist.clear()</h3>
+            <h3>print(thislist)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+    </div>
+</body>
+</html>

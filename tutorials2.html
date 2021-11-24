@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tt1.css">
+</head>
+<body>
+    <div class="home">
+        <h1>Chapter-02: Variables and Data Types</h1>
+    </div>
+    <br>
+    <br>
+    <h2>Python Variables</h2>
+    <br>
+    <h2>Creating Variables</h2>
+    <div class="home1">
+        <h3>Variables are containers for storing data values.</h3>
+        <br>
+        <h3>Unlike other programming languages, Python has no command for declaring a variable.</h3>
+        <br>
+        <h3>A variable is created the moment you first assign a value to it.</h3>
+        <br>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>x = 5</h3>
+            <h3>y = "John"</h3>
+            <h3>print(x)</h3>
+            <h3>print(y)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>Variables do not need to be declared with any particular type, and can even change type after they have been set.</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>x = "John"</h3>
+            <h3># is the same as</h3>
+            <h3>x = 'John'</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Variable Names</h2>
+        <h3>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:</h3>
+        <br>
+        <h3>=> A variable name must start with a letter or the underscore character</h3>
+        <h3>=> A variable name cannot start with a number</h3>
+        <h3>=> A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</h3>
+        <h3>=> Variable names are case-sensitive (age, Age and AGE are three different variables)</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <div class="ju">
+                <h3>#Legal variable names:</h3>
+            </div>
+            <h3>myvar = "John"</h3>
+            <h3>my_var = "John"</h3>
+            <h3>_my_var = "John"</h3>
+            <h3>myVar = "John"</h3>
+            <h3>MYVAR = "John"</h3>
+            <h3>myvar2 = "John"</h3>
+            <br>
+            <br>
+            <div class="ju">
+                <h3>#Illega variable names:</h3>
+            </div>
+            <h3>2myvar = "John"</h3>
+            <h3>my-var = "John"</h3>
+            <h3>my var = "John"</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Assign Value to Multiple Variables</h2>
+        <h3>Python allows you to assign values to multiple variables in one line:</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>x, y, z = "Orange", "Banana", "Cherry"</h3>
+            <h3>print(x)</h3>
+            <h3>print(y)</h3>
+            <h3>print(z)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Output Variables</h2>
+        <h3>The Python print statement is often used to output variables.</h3>
+        <h3>To combine both text and a variable, Python uses the + character:</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>x = "awesome"</h3>
+            <h3>print("Python is " + x)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>You can also use the + character to add a variable to another variable:</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>x = "Python is "</h3>
+            <h3>y = "awesome"</h3>
+            <h3>z =  x + y</h3>
+            <h3>print(z)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>For numbers, the + character works as a mathematical operator:</h3>
+        <div class="fu">
+            <h3>x = 5</h3>
+            <h3>y = 10</h3>
+            <h3>print(x + y)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>If you try to combine a string and a number, Python will give you an error:</h3>
+        <h2>Example</h2>
+        <div class="fu">
+            <h3>x = 5</h3>
+            <h3>y = "John"</h3>
+            <h3>print(x + y)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Global Variables</h2>
+        <h3>Variables that are created outside of a function (as in all of the examples above) are known as global variables.</h3>
+        <h3>Global variables can be used by everyone, both inside of functions and outside.</h3>
+        <h2>Example</h2>
+        <h3>Create a variable outside of a function, and use it inside the function</h3>
+        <div class="fu">
+            <h3>x = "awesome"</h3>
+            <br>
+            <br>
+            <h3>def myfunc():</h3>
+            <div class="mu">
+                <h3>print("Python is " + x)</h3>
+            </div>
+            <br>
+            <br>
+            <h3>myfunc()</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. The global variable with the same name will remain as it was, global and with the original value.</h3>
+        <h2>The global Keyword</h2>
+        <h3>Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.</h3>
+        <h3>To create a global variable inside a function, you can use the global keyword.</h3>
+        <h2>Example</h2>
+        <h3>If you use the global keyword, the variable belongs to the global scope:</h3>
+        <div class="fu">
+            <h3>def myfunc():</h3>
+            <div class="mu">
+                <h3>global x</h3>
+                <h3>x = "fantastic"</h3>
+            </div>
+            <h3>myfunc()</h3>
+            <br>
+            <br>
+            <h3>print("Python is " + x)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h3>Also, use the global keyword if you want to change a global variable inside a function.</h3>
+        <h2>Example</h2>
+        <h3>To change the value of a global variable inside a function, refer to the variable by using the global keyword:</h3>
+        <div class="fu">
+            <h3>x = "awesome"</h3>
+            <br>
+            <br>
+            <h3>def myfunc():</h3>
+            <div class="mu">
+                <h3>global x</h3>
+                <h3>x = "fantastic"</h3>
+            </div>
+            <br>
+            <h3>myfunc()</h3>
+            <br>
+            <h3>print("Python is " + x)</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Python Data Types</h2>
+        <h2>Built-in Data Types</h2>
+        <h3>In programming, is an important concept.</h3>
+        <br>
+        <h3>Variables can store data of different types, and different types can do different things.</h3>
+        <br>
+        <h3>Python has the following data types built-in by default, in these categories:</h3>
+        <br>
+        <h3>Text Type:	str</h3>
+        <h3>Numeric Types:	int, float, complex</h3>
+        <h3>Sequence Types:	list, tuple, range</h3>
+        <h3>Mapping Type:	dict</h3>
+        <h3>Set Types:	set, frozenset</h3>
+        <h3>Boolean Type:	bool</h3>
+        <h3>Binary Types:	bytes, bytearray, memoryview</h3>
+        <h2>Getting the Data Type</h2>
+        <h3>You can get the of any object by using the type() function:</h3>
+        <h2>Example</h2>
+        <h3>Print the of the variable x:</h3>
+        <div class="fu">
+            <h3>x = 5</h3>
+            <h3>print(type(x))</h3>
+        </div>
+        <div class="ju">
+            <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3>
+        </div>
+        <h2>Setting the Data Type</h2>
+        <h3>In Python, the is set when you assign a value to a variable:</h3>
+        <h3>Example                                      -          datatype -         	    <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = "Hello World"	                          -         str      -     	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = 20                                         -        int       -   	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = 20.5                                       -        float     -     	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = 1j                                         -        complex   -        	    <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = ["apple", "banana", "cherry"]               -       list       -   	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = ("apple", "banana", "cherry")               -       tuple       -   	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = range(6)                                     -      range        -  	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = {"name" : "John", "age" : 36}                 -     dict         - 	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = {"apple", "banana", "cherry"}                  -    set          -	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = frozenset({"apple", "banana", "cherry"})     -     frozenset     -     	    <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = True                                          -     bool      -    	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = b"Hello"                                       -    bytes     -     	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = bytearray(5)                                  -     bytearray   -       	    <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = memoryview(bytes(5))                          -     memoryview   -       	    <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <br>
+        <br>
+        <h2>Setting the Specific Data Type</h2>
+        <h3>If you want to specify the data type, you can use the following constructor functions:</h3>
+        <h3>In Python, the is set when you assign a value to a variable:</h3>
+        <h3>Example  -                                                 datatype   -       	    <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = str("Hello World")-	                                   str  -         	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = int(20) -                                                int   -       	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = float(20.5)    -                                        float   -       	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = complex(1j)   -                                         complex  -         	    <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = list(("apple", "banana", "cherry")) -                   list   -       	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = tuple(("apple", "banana", "cherry")) -                  tuple -         	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = range(6)          -                                     range  -        	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = dict(name="John", age=36)  -                            dict     -     	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = set(("apple", "banana", "cherry")) -                    set       -   	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = frozenset(("apple", "banana", "cherry"))  -             frozenset   -       	    <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = bool(5)                             -                   bool    -      	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = bytes(5)                             -                  bytes -         	        <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = bytearray(5)                          -                 bytearray  -        	    <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <h3>x = memoryview(bytes(5))                   -                memoryview    -      	    <h3><a href="https://www.programiz.com/python-programming/online-compiler"> Try yourself in Code Editor</a></h3></h3>
+        <br>
+    </div>
+</body>
+</html>

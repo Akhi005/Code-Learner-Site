@@ -1,0 +1,49 @@
+body{
+    margin: 0px;
+    font-size:16px;
+    background-color:rgb(245, 248, 224);
+    font-family:'Montserrat',sans-serif;
+    font-weight: 400;
+}
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0;
+    outline : none;
+}
+.home-box h3{
+    font-size : 18px;
+    color:khaki;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+.home-box1 h1{
+    font-size : 30px;
+    color:khaki;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 25px;
+    padding-left: 200px;
+}
+
+
+
+.custom-box {
+    max-width:700px;
+    background-color:green;
+    margin:40px auto;
+    padding:30px;
+    border-radius: 10px;
+    animation: fadeInRight 1s ease;
+}
+@keyframes fadeInRight{
+    0%{
+        transform: translatex(40px);
+        opacity:0;
+    }
+    100%{
+        transform: translatex(0px);
+        opacity:1;
+    }
+}
